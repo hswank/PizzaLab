@@ -1,0 +1,15 @@
+package co.grandcircus.springlab;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+public class SecondController {
+	@RequestMapping("pizza2")
+	public String showPizza2(@RequestParam String type, Model model) {
+		
+		model.addAttribute("type", type);
+		
+		return "displayPizza2";
+	}
+}

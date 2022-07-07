@@ -1,0 +1,47 @@
+package co.grandcircus.springlab;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class FirstController {
+	
+	@RequestMapping("index")
+	public String showIndex() {
+		return "index";
+	}
+	
+	@RequestMapping("/pizza")
+	public String showPizza1(@RequestParam String type, Model model) {
+		
+		model.addAttribute("type", type);
+		
+		return "displayPizza1";
+	}
+	
+	@RequestMapping("/pizza2")
+	public String showPizza2(@RequestParam String type, Model model) {
+		
+		model.addAttribute("type", type);
+		
+		return "display-Pizza2";
+	}
+	
+	@RequestMapping("/pizza3")
+	public String showPizza3(@RequestParam String type, Model model) {
+		
+		model.addAttribute("type", type);
+		
+		return "display-Pizza3";
+	}
+	
+	@RequestMapping("/builder")
+	public String showBuilder(@RequestParam String type, Model model) {
+		
+		model.addAttribute("type", type);
+		
+		return "display-Builder";
+	}
+}

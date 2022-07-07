@@ -1,0 +1,8 @@
+@Controller
+public class SpringController {
+	
+	@RequestMapping("firstwebpage")
+	public String showFirstWebpage() {
+		return "firstwebpage";
+	}
+}
