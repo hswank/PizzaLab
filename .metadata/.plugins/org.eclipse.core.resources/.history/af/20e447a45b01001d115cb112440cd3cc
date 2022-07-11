@@ -20,7 +20,7 @@
 	  		<option value="large">Large $12</option>
 		</select>
 		
-		How many toppings? (0-10)<input min=0 max=10 value=0 type="number" name="topCount" required /><br><br>
+		How many toppings? <input type="number" name="topCount" /><br><br>
 		
 		<input type="checkbox" id="glutenFree" name="noGluten" value=true>
 		<label for="glutenFree"> Gluten-free crust ($2.00 extra)</label><br><br>
